@@ -537,9 +537,8 @@
 
 
 .product-color {
-    height: 85px;
+    height: 45px;
     width: 150px;
-    border: 1px solid black;
     margin-left: 70px;
 }
 
@@ -689,8 +688,8 @@
 
 .product-payment{
     height: 70px;
-    width: 485px;
-    margin-left: 70px;
+    width: 505px;
+    margin-left: 65px;
     background-color: #f3f5f6;
 }
 
@@ -714,7 +713,7 @@
 
 
 .information-menu{
-    height: 800px;
+    height: 700px;
     width: 100%;
 }
 
@@ -1014,4 +1013,467 @@
     height: 50px;
     width: 140px;
     margin-top: 30px;
+}
+
+
+
+#related-products{
+    height: 750px;
+}
+
+
+.related-products-header{
+    height: 80px;
+    width: 100%;
+
+}
+
+.related-products-header h5{
+    text-align: center;
+    color: #0989ff;
+}
+
+.related-products-header h1{
+    text-align: center;
+}
+
+
+.related-products-box{
+    height: 550px;
+    width: 100%;
+
+}
+
+
+.products-box-one{
+    height: 450px;
+    width: 300px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+
+.products-box-one-image{
+    height: 340px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.products-box-one:hover ul{
+    transform: translate(0%,0%);
+}
+
+.products-box-one:hover button{
+    transform: translate(0%,0%);
+}
+
+.products-box-one-image img{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    z-index: 0;
+
+}
+
+.products-box-one-image h5{
+    position: absolute;
+    top: 5.5%;
+    left: 5.5%;
+    background-color: black;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 50%;
+}
+
+.products-box-one-image ul{
+    position: absolute;
+    top: 5%;
+    left: 72%;
+    list-style: none;
+    transform: translate(80%, 0%);
+    transition: all 0.5s ease;
+}
+
+
+.products-box-one-image ul li{
+    box-shadow: 0px 0px 6px gray;
+    background-color: white;
+    margin: 5px 0px;
+}
+
+.products-box-one-image ul li i{
+    color: black;
+}
+
+.products-box-one-image ul li i{
+    padding: 12px 10px;
+}
+
+.products-box-one-image button{
+    position: absolute;
+    height: 40px;
+    width: 300px;
+    left: -0.5%;
+    top: 88.9%;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease;
+    transform:translate(0%, 105%);
+}
+
+.products-box-one-image button:hover{
+    background-color: #0989ff;
+}
+
+
+.products-box-one-text{
+    height: 110px;
+    width: 100%;
+}
+
+.products-box-one-text h6{
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+
+.products-box-one-text h6:hover{
+    color: #BD844C;
+}
+
+.products-box-one-text h4{
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.products-box-one-text h4:hover{
+    color: #0989ff;
+}
+
+.products-box-one-text h5{
+    font-size: 18px;
+    display: inline-block;
+}
+
+.products-box-one-text span{
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+.products-box-two{
+    height: 450px;
+    width: 300px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+
+.products-box-two-image{
+    height: 340px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.products-box-two:hover ul{
+    transform: translate(0%,0%);
+}
+
+.products-box-two:hover button{
+    transform: translate(0%,0%);
+}
+
+.products-box-two-image img{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    z-index: 0;
+
+}
+
+.products-box-two-image h5{
+    position: absolute;
+    top: 5.5%;
+    left: 5.5%;
+    background-color: black;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 50%;
+}
+
+.products-box-two-image ul{
+    position: absolute;
+    top: 5%;
+    left: 72%;
+    list-style: none;
+    transform: translate(80%, 0%);
+    transition: all 0.5s ease;
+}
+
+
+.products-box-two-image ul li{
+    box-shadow: 0px 0px 6px gray;
+    background-color: white;
+    margin: 5px 0px;
+}
+
+.products-box-two-image ul li i{
+    color: black;
+}
+
+.products-box-two-image ul li i{
+    padding: 12px 10px;
+}
+
+.products-box-two-image button{
+    position: absolute;
+    height: 40px;
+    width: 300px;
+    left: -0.5%;
+    top: 88.9%;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease;
+    transform:translate(0%, 105%);
+}
+
+.products-box-two-image button:hover{
+    background-color: #0989ff;
+}
+
+
+.products-box-two-text{
+    height: 110px;
+    width: 100%;
+}
+
+.products-box-two-text h6{
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+
+.products-box-two-text h6:hover{
+    color: #BD844C;
+}
+
+.products-box-two-text h4{
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.products-box-two-text h4:hover{
+    color: #0989ff;
+}
+
+.products-box-two-text h5{
+    font-size: 18px;
+    display: inline-block;
+}
+
+.products-box-two-text span{
+    text-decoration: line-through;
+}
+
+
+
+#footer{
+    background-color: #f4f7f9;
+}
+
+
+#end{
+    margin-top: 100px;
+    height: 500px;
+    background-color: #f4f7f9;
+}
+
+.end-up{
+    height: 450px;
+}
+
+
+.end-up-one{
+    height: 250px;
+    width: 300px;
+    margin-left: 120px;
+}
+
+.end-up-one img{
+    margin-top: 70px;
+}
+
+.end-up-one h6{
+    margin-top: 15px;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+}
+
+
+.end-up-one-socmedia i{
+    height: 33px;
+    width: 33px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    padding-left: 8px;
+    padding-top: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.end-up-one-socmedia i:hover{
+    background-color: #0989ff;
+    color: white;
+}
+
+
+.end-up-two{
+    height: 350px;
+    width: 300px;
+    margin-left: 120px;
+}
+
+.end-up-two a{
+    text-decoration: none;
+    color: #55585B;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.end-up-two a:hover{
+    color: #0989ff;
+}
+
+.end-up-two li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+
+.end-up-two h5{
+    font-size: 23px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+
+
+
+.end-up-three{
+    height: 350px;
+    width: 300px;
+    margin-left: 50px;
+}
+
+.end-up-three a{
+    text-decoration: none;
+    color: #55585B;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.end-up-three a:hover{
+    color: #0989ff;
+}
+
+.end-up-three li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+
+.end-up-three h5{
+    font-size: 23px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+
+.end-up-four{
+    height: 350px;
+    width: 300px;
+}
+
+.end-up-four h5{
+    font-size: 23px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.end-up-four span{
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+
+.end-up-four h4{
+    margin-left: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.end-up-four h4:hover{
+    color: #0989ff;
+}
+
+
+.end-up-four .fa-regular{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.end-up-four h6{
+    display: inline-block;
+    color: #55585B;
+    font-size: 14px;
+    margin-left: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.end-up-four h6:hover{
+    color: #0989ff;
+}
+
+
+.end-up-four h3{
+    font-size: 13px;
+    display: inline-block;
+    color: #55585B;
+    font-size: 14px;
+    margin-left: 54px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+
+.end-up-four h3:hover{
+    color: #0989ff;
+}
+
+.end-up-four .fa-solid{
+    margin-top: 20px;
+}
+
+
+.end-down h6{
+    position: relative;
+    display: inline-block;
+    margin-left: 118px;
+    color: #55585B;
+}
+
+.end-down img{
+    position: absolute;
+    left: 77%;
 }
