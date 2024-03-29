@@ -155,54 +155,64 @@
 }
 
 
-.navbar-down{
+#navbar-down{
     height: 75px;
     width: 100%;
     box-shadow: 0px 1px 3px gray;
     display: flex;
-    position: fixed;
     background-color: white;
+    z-index: 10;
+}
+
+.fixed-navbar-down{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 
-
-.navbar-down-logo{
-    height: 65px;
-    padding-top: 16px;
-    padding-left: 15px;
+.navbar-down-logo {
+    height: 70px;
+    width: 150px;
+    padding-top: 15px;
+    position: absolute;
+    left: 9.8%;
 }
 
 
-.navbar-down-link{
-    height: 65px;
-    width: 530px;
+.navbar-down-link {
+    height: 70px;
+    width: 550px;
+    display: flex;
+    position: absolute;
+    left: 19%;
 }
 
 
-.navbar-down-link ul{
+.navbar-down-link ul {
     list-style: none;
     display: flex;
     margin-top: 20px;
 }
 
-.navbar-down-link ul li a{
+.navbar-down-link ul li a {
     text-decoration: none;
     color: black;
     margin: 0px 10px;
     transition: all 0.4s ease;
-    cursor: pointer;
 }
 
-.navbar-down-link ul li a:hover{
+.navbar-down-link ul li a:hover {
     color: #0989ff;
 }
 
 
-.navbar-down-link ul li a i{
+.navbar-down-link ul li a i {
     font-size: 13px;
 }
 
-.blog-box{
+
+.blog-box {
     height: 140px;
     width: 175px;
     position: absolute;
@@ -218,7 +228,7 @@
 
 
 
-.blog-box h6{
+.blog-box h6 {
     font-size: 14px;
     color: #55585b;
     cursor: pointer;
@@ -226,22 +236,22 @@
 }
 
 
-.blog-box h6:hover{
+.blog-box h6:hover {
     color: #821F40;
 }
 
 
-.navbar-down-search{
+.navbar-down-search {
     height: 70px;
     width: 400px;
     position: absolute;
-    left: 58%;
+    left: 54%;
     padding-top: 10px;
     padding-left: 20px;
 }
 
 
-.navbar-down-search input{
+.navbar-down-search input {
     height: 45px;
     width: 350px;
     padding-left: 20px;
@@ -252,7 +262,7 @@
     position: relative;
 }
 
-.navbar-down-search .search{
+.navbar-down-search .search {
     position: absolute;
     left: 81%;
     font-size: 22px;
@@ -263,17 +273,17 @@
 }
 
 
-.navbar-down-search .search:hover{
+.navbar-down-search .search:hover {
     color: #0989ff;
 }
 
 
-.navbar-down-direction{
+.navbar-down-direction {
     height: 30px;
     width: 27px;
     position: absolute;
-    left: 83%;
-    top: 30%;
+    left: 80%;
+    top: 11%;
     display: flex;
     padding-top: 4px;
     transition: all 0.3s ease;
@@ -281,25 +291,60 @@
 }
 
 
-.navbar-down-direction:hover{
+.navbar-down-direction:hover {
     color: #0989ff;
 }
 
-.navbar-down-direction i{
+.navbar-down-direction i {
     font-size: 18px;
 }
 
 
-.navbar-down-favourite{
+.navbar-down-favourite {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 83%;
+    top: 10%;
+}
+
+
+.navbar-down-favourite i {
+    font-size: 22px;
+    padding-top: 8px;
+    padding-left: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar-down-favourite i:hover {
+    color: #0989ff;
+}
+
+.navbar-down-favourite h6 {
+    background-color: #0989ff;
+    color: white;
+    width: 19px;
+    height: 19px;
+    padding-left: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1%;
+    left: 48%;
+}
+
+
+
+.navbar-down-shopping {
     height: 40px;
     width: 40px;
     position: absolute;
     left: 86%;
-    top: 22%;
+    top: 10%;
 }
 
 
-.navbar-down-favourite i{
+.navbar-down-shopping i {
     font-size: 22px;
     padding-top: 8px;
     padding-left: 8px;
@@ -307,11 +352,12 @@
     transition: all 0.3s ease;
 }
 
-.navbar-down-favourite i:hover{
+
+.navbar-down-shopping i:hover {
     color: #0989ff;
 }
 
-.navbar-down-favourite h6{
+.navbar-down-shopping h6 {
     background-color: #0989ff;
     color: white;
     width: 19px;
@@ -322,43 +368,6 @@
     top: 1%;
     left: 48%;
 }
-
-
-
-.navbar-down-shopping{
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    left: 89%;
-    top: 22%;
-}
-
-
-.navbar-down-shopping i{
-    font-size: 22px;
-    padding-top: 8px;
-    padding-left: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-
-.navbar-down-shopping i:hover{
-    color: #0989ff;
-}
-
-.navbar-down-shopping h6{
-    background-color: #0989ff;
-    color: white;
-    width: 19px;
-    height: 19px;
-    padding-left: 5px;
-    border-radius: 50%;
-    position: absolute;
-    top: 1%;
-    left: 48%;
-}
-
 
 
 #header{

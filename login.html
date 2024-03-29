@@ -47,52 +47,59 @@
             </div>
         </div>
 
-        <div class="navbar-down">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="navbar-down-logo">
-                            <img src="./assets/images/logo.svg" alt="">
-                        </div>
+        <div id="navbar-down">
+            <div class="col-2">
+                <div class="navbar-down-logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="navbar-down-link">
+                    <ul>
+                        <li><a href="">Home <i class="fa-solid fa-chevron-down"></i></a></li>
+                        <li><a href="">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+                        <li><a href="">Products <i class="fa-solid fa-chevron-down"></i></a></li>
+                        <li><a href="">Coupons</a></li>
+                        <li class="blog"><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+
+                    <div class="blog-box d-none">
+                        <h6>Blog Standart</h6>
+                        <h6>Blog Grid</h6>
+                        <h6>Blog List</h6>
+                        <h6>Blog Details</h6>
                     </div>
-                    <div class="col-2">
-                        <div class="navbar-down-link">
-                            <ul>
-                                <li><a href="">Home <i class="fa-solid fa-chevron-down"></i></a></li>
-                                <li><a href="">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
-                                <li><a href="">Products <i class="fa-solid fa-chevron-down"></i></a></li>
-                                <li><a href="">Coupons</a></li>
-                                <li><a href="">Blog</a></li>
-                                <li><a href="">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="navbar-down-search">
-                            <input type="text" placeholder="Search for Products...">
-                            <i class="fa-solid fa-magnifying-glass search"></i>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="navbar-down-direction">
-                            <i class="fa-solid fa-arrow-up-long"></i>
-                            <i class="fa-solid fa-arrow-down-long"></i>
-                        </div>
-                    </div>
-        
-                    <div class="col-2">
-                        <div class="navbar-down-favourite">
-                            <i class="fa-regular fa-heart"></i>
-                            <h6>0</h6>
-                        </div>
-                    </div>
-        
-                    <div class="col-2">
-                        <div class="navbar-down-shopping">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                            <h6>0</h6>
-                        </div>
-                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="navbar-down-search">
+                    <input type="text" placeholder="Search for Products...">
+                    <i class="fa-solid fa-magnifying-glass search"></i>
+                </div>
+            </div>
+
+
+            <div class="col-2">
+                <div class="navbar-down-direction">
+                    <i class="fa-solid fa-arrow-up-long"></i>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="navbar-down-favourite">
+                    <i class="fa-regular fa-heart"></i>
+                    <h6>0</h6>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="navbar-down-shopping">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h6>0</h6>
                 </div>
             </div>
         </div>
@@ -224,6 +231,20 @@
             </div>
         </section>
     </footer>
+
+
+    <script>
+        let navbarDown = document.getElementById("navbar-down");
+        const changestyle = () => {
+            if(window.scrollY >= 96){
+                navbarDown.classList.add("fixed-navbar-down")
+            } else {
+                navbarDown.classList.remove("fixed-navbar-down")
+            }
+        }
+
+        window.addEventListener("scroll", changestyle)
+    </script>
 </body>
 
 </html>

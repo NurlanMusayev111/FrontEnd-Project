@@ -49,7 +49,7 @@
         </div>
 
 
-        <div class="navbar-down">
+        <div id="navbar-down">
             <div class="col-2">
                 <div class="navbar-down-logo">
                     <img src="./assets/images/logo.svg" alt="">
@@ -500,6 +500,18 @@
 
 
     <script src="./assets/js/productdetail.js"></script>
+    <script>
+        let navbarDown = document.getElementById("navbar-down");
+        const changestyle = () => {
+            if(window.scrollY >= 96){
+                navbarDown.classList.add("fixed-navbar-down")
+            } else {
+                navbarDown.classList.remove("fixed-navbar-down")
+            }
+        }
+
+        window.addEventListener("scroll", changestyle)
+    </script>
 </body>
 
 </html>
